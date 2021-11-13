@@ -5,20 +5,10 @@ import Episode from './../Episode';
 const testEpisode = {
     id:1,
     name: "",
-    image: "http://static.tvmaze.com/uploads/images/medium_landscape/67/168918.jpg",
-    season: 1,
-    number: 1,
-    summary: "test episode info",
-    runtime: 1
-}
-
-const testEpisodeWithoutImage = {
-    id: 1,
-    name: "",
     image: "",
     season: 1,
     number: 1,
-    summary: "",
+    summary: "test episode info",
     runtime: 1
 }
 
