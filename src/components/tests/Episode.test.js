@@ -8,7 +8,7 @@ const testEpisode = {
     image: "http://static.tvmaze.com/uploads/images/medium_landscape/67/168918.jpg",
     season: 1,
     number: 1,
-    summary: "",
+    summary: "test episode info",
     runtime: 1
 }
 
@@ -29,7 +29,7 @@ test("renders without error", () => {
 test("renders the summury test passed as prop", ()=>{
     render(<Episode episode = { testEpisode } />);
 
-    const summary = screen.queryByText(/ One year after the events /i);
+    const summary = screen.queryByText(/test episode info/i);
     expect(summary).toBeTruthy();
 });
 
